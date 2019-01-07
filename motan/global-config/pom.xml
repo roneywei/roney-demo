@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>motan-global-config</groupId>
+    <artifactId>motan-global-config</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <modules>
+        <module>common-config</module>
+        <module>service-config</module>
+        <module>client-config</module>
+    </modules>
+
+    <parent>
+        <groupId>motan</groupId>
+        <artifactId>motan</artifactId>
+        <version>1.0</version>
+    </parent>
+
+
+</project>
