@@ -12,7 +12,7 @@ import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
 public class ZipkinMySqlApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ZipkinMySqlHttpApplication.class, args);
+        SpringApplication.run(ZipkinMySqlApplication.class, args);
     }
 
 }

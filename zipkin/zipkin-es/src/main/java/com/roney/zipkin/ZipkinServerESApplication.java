@@ -11,6 +11,6 @@ import org.springframework.cloud.sleuth.zipkin.stream.EnableZipkinStreamServer;
 @SpringBootApplication
 public class ZipkinServerESApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ZipkinServerESHttpApplication.class,args);
+        SpringApplication.run(ZipkinServerESApplication.class,args);
     }
 }
