@@ -15,7 +15,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>zipkin-mysql</module>
+		<module>zipkin-mysql-http</module>
         <module>zipkin-es</module>
+        <module>zipkin-es-http</module>
     </modules>
 
 
