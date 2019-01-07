@@ -1,0 +1,23 @@
+server:
+  port: 9411
+
+  ##storage 配置 elasticsearch mysql 等
+zipkin:
+   storage:
+      type: elasticsearch
+      elasticsearch :
+          host : 127.0.0.1:9200
+          cluster: elasticsearch
+          index: zipkin
+          index-shards: 5
+          index-replicas: 1
+
+spring:
+  sleuth:
+    enabled: false
+
+  rabbitmq:
+    host: 10.1.95.11
+    port: 5672
+    username: admin
+    password: 123456
