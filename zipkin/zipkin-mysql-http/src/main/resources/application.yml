@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    #schema: classpath:/zipkin.sql
+    url: jdbc:mysql://127.0.0.1:3306/zipkin3
+    username: root
+    password: root
+# Switch this on to create the schema on startup:
+    initialize: true
+    continueOnError: true
+
+zipkin:
+  storage:
+    type: mysql
+
+server:
+  port: 9411
