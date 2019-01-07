@@ -1,0 +1,34 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: @pom.artifactId@
+  sleuth:
+    enabled: true
+    sampler:
+      percentage: 1
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+server:
+  port: 8072
+
+motan:
+  beans:
+    package: demo.service.client
+  service:
+    group: demo
+    access:
+      log: true
+    maxWorkerThread: 200
+    minWorkerThread: 20
+  client:
+    group: demo
+    access:
+      log: true
+  export:
+    port: ${random.int[9001,9999]}
+  zookeeper:
+    host: 127.0.0.1:2181

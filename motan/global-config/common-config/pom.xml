@@ -39,6 +39,11 @@
             <version>${motan.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.weibo</groupId>
+            <artifactId>serialization-extension</artifactId>
+            <version>${motan.version}</version>
+        </dependency>
+        <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
         </dependency>

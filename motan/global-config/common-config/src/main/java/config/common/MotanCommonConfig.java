@@ -46,14 +46,11 @@ public class MotanCommonConfig {
                                              @Value("${motan.service.minWorkerThread:20}") Integer minWorkerThread) {
         ProtocolConfigBean config = new ProtocolConfigBean();
         config.setDefault(true);
-        config.setSerialization("hessian2Extension");
+        config.setSerialization("fastjson");
         config.setName("motan");
         config.setMaxContentLength(10485760);
         config.setMaxWorkerThread(maxWorkerThread == null ? 200 : maxWorkerThread);
         config.setMinWorkerThread(minWorkerThread == null ? 20 : minWorkerThread);
-        Map<String, String> parameters = new HashMap<String, String>();
-        parameters.put(URLParamType.endpointFactory.getName(), "eleganceMotan");
-        config.setParameters(parameters);
         return config;
     }
 
@@ -63,7 +60,7 @@ public class MotanCommonConfig {
 
         RegistryConfigBean config = new RegistryConfigBean();
         config.setDefault(true);
-        config.setRegProtocol("commondZookeeper");
+        config.setRegProtocol("zookeeper");
         config.setAddress(zookeeperAddress);
         config.setConnectTimeout(30000);
         return config;

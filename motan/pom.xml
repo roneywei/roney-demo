@@ -16,6 +16,10 @@
     <modules>
         <module>filter-opentracing</module>
 		<module>global-config</module>
+        <module>demo-api</module>
+		<module>demo-service</module>
+		<module>demo-client</module>
+		<module>demo-service-client</module>
     </modules>
 
 

@@ -2,7 +2,7 @@ spring:
   profiles:
     active: local
   datasource:
-    #schema: classpath:/zipkin.sql
+    schema: classpath:/zipkin.sql
     url: jdbc:mysql://127.0.0.1:3306/zipkin3
     username: root
     password: root
@@ -10,10 +10,10 @@ spring:
     initialize: true
     continueOnError: true
   rabbitmq:
-    host: 10.1.95.11
+    host: 127.0.0.1
     port: 5672
-    username: admin
-    password: 123456
+    username: guest
+    password: guest
 
 zipkin:
   storage:
